@@ -1,6 +1,14 @@
 # Early Stopping in Residual Quantization: An Empirical Negative Result
 
+**Published**: TechRxiv, October 24, 2025  
+**DOI**: 10.36227/techrxiv.176127327.72667338/v1  
+**Author**: Nahuel Alejandro Nucera
+
 This repository contains the experimental code for investigating Multi-Vector Residual Quantization (MVRQ) with adaptive early stopping mechanisms. The research explores whether predictive early stopping can improve the compression-accuracy trade-off in residual quantization systems.
+
+## Abstract
+
+Residual Quantization (RQ) is a common method for compressing high-dimensional embeddings used in vector search systems. We investigate a variant, MVRQ (Margin-Variable Residual Quantization), which applies early stopping to reduce storage by dynamically selecting the number of quantization stages per vector. While the approach intuitively aims to allocate more bits to "hard" vectors and fewer to "easy" ones, our experiments demonstrate that early stopping in RQ leads to significant recall degradation with minimal actual storage benefit. This paper reports an honest negative result, showing that naive adaptive RQ schemes fail to outperform standard fixed-stage RQ even under favorable settings.
 
 ## Overview
 
@@ -142,13 +150,17 @@ The research investigates whether MVRQ can achieve:
 If you use this code in your research, please cite:
 
 ```bibtex
-@article{mvrq2024,
+@article{nucera2025,
   title={Early Stopping in Residual Quantization: An Empirical Negative Result},
-  author={[Your Name]},
-  journal={[Journal/Conference]},
-  year={2024}
+  author={Nahuel Alejandro Nucera},
+  journal={TechRxiv},
+  year={2025},
+  doi={10.36227/techrxiv.176127327.72667338/v1},
+  url={https://www.techrxiv.org/articles/preprint/Early_Stopping_in_Residual_Quantization_An_Empirical_Negative_Result/176127327}
 }
 ```
+
+**TechRxiv Link**: https://www.techrxiv.org/articles/preprint/Early_Stopping_in_Residual_Quantization_An_Empirical_Negative_Result/176127327
 
 ## License
 
@@ -158,6 +170,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Contact
+## Publication Details
 
-For questions or suggestions, please open an issue or contact [your-email@domain.com].
+- **Preprint**: TechRxiv
+- **Publication Date**: October 24, 2025
+- **DOI**: 10.36227/techrxiv.176127327.72667338/v1
+- **License**: Public Domain (CC0 1.0)
+- **Funder**: Independent Sector (Identifier: 100003880)
